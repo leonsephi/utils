@@ -1,4 +1,4 @@
-module github.com/leonsehpi/utils
+module github.com/leonsephi/utils
 
 go 1.24.5
 
