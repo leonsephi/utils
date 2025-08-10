@@ -26,7 +26,6 @@ type LogConfig struct {
 }
 
 func InitLogger(configs LogConfig) error {
-	err := nil
 	// set log level
 	var level = new(slog.LevelVar)
 	switch configs.Level {
@@ -61,5 +60,5 @@ func InitLogger(configs LogConfig) error {
 		fileHandler := slog.NewJSONHandler(lumberjackLogger, opts)
 		slog.SetDefault(slog.New(fileHandler))
 	}
-	return err
+	return nil
 }
